@@ -8,7 +8,7 @@ export function getLines(filename: string): string[] {
     const data = fs.readFileSync(filename, 'utf8');
     lines = data.trim().split('\n');
   } catch (err) {
-    console.error(err);
+    console.error(err); // eslint-disable-line no-console
   }
 
   return lines;
