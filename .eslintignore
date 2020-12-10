@@ -1,0 +1,2 @@
+# don't ignore dotfiles in repo root
+!/.*
