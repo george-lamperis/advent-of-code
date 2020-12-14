@@ -1,6 +1,5 @@
 import fs from 'fs';
 
-// eslint-disable-next-line import/prefer-default-export
 export function getLines(filename: string): string[] {
   let lines: string[] = [];
 
@@ -12,4 +11,17 @@ export function getLines(filename: string): string[] {
   }
 
   return lines;
+}
+
+export function getFileContents(filename: string): string {
+  let contents = '';
+
+  try {
+    const data = fs.readFileSync(filename, 'utf8');
+    contents = data.trim();
+  } catch (err) {
+    console.error(err); // eslint-disable-line no-console
+  }
+
+  return contents;
 }
