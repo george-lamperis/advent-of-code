@@ -21,6 +21,7 @@ module.exports = {
     'import/extensions': ['.js', '.ts', '.mjs', '.jsx', '.tsx'],
   },
   rules: {
+    'no-else-return': ['off'],
     // Ignore Airbnb 'import/extensions' setting.
     'import/extensions': [
       'error',
