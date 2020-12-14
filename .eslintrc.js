@@ -1,6 +1,9 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
+  env: {
+    es2020: true,
+  },
   extends: [
     'plugin:@typescript-eslint/recommended',
     'airbnb-base',
