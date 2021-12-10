@@ -13,7 +13,8 @@ export function getMatchingLetterCount(input: string, letter: string): number {
 }
 
 export function parsePasswordAndPolicy(line: string): PasswordInfo {
-  const parsingRegex = /(?<min>\d+)-(?<max>\d+) (?<letter>\w): (?<password>\w+)/;
+  const parsingRegex =
+    /(?<min>\d+)-(?<max>\d+) (?<letter>\w): (?<password>\w+)/;
   const matches = parsingRegex.exec(line);
   const { min, max, letter, password } = matches?.groups || {};
 
