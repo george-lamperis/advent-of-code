@@ -1,4 +1,3 @@
-import { getLines } from '../../utils';
 import { getAnswerPart1, getAnswerPart2 } from '../index';
 
 describe('getAnswerPart1', () => {
